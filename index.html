@@ -51,7 +51,32 @@
                   Благодаря реккурентной формуле достаточно вычислить одно такое значение и получить любое другое подобное. Именно это и удалось сделать с половинным аргументом:
 
                   <p align="center"><img src="img/half_in_gamma.png" height="120px" alt="Гамма-функция в точке 1/2"></p>
-               </section>
+
+                  <center>
+                     <table border="1"> <!-- <caption>name</caption> -->
+
+                        <tr>
+                           <td colspan="6"><center>Значения Гамма-функции</center></td>
+                        </tr>
+            
+                        <colgroup><col style="background-color:rgb(227, 227, 227) ;"></colgroup>
+                        <tr>
+                           <td>Tочные</td>
+                           <td><center>целые</center></td>
+                           <td><center>полуцелые</center></td>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">Неточные</td>
+                           <td>рациональные</td>
+                           <td>вещественные</td>
+                           
+                        </tr>
+                        <tr>
+                           <td colspan="2"><center>комплексные</center></td>
+                        </tr>
+                     </table>
+                  </center>
+               </section><br>
 
 
                <section> <!-- Факт 2 -->
@@ -91,15 +116,48 @@
                   Вот <a href="https://www.youtube.com/watch?v=UQ7W6CcGOWA" title="Красота интеграла с тангенсом">ссылка</a> на доказательство.
                </section>
             </font></blockquote><hr>
+
+
+           <!-- коментики -->
+            <font face="Verdana">Оставить комментарий:</font><br>
+
+            <form action="login" method="POST"> 
+               <fieldset> 
+                  <legend><font face="Verdana"><small>Форма для заполнения</small></font></legend>
+
+                  <font face="Verdana"><small>Имя:</small></font> <input type="text" name="user_name">
+                  <button type="button">Очистить</button> &emsp;
+
+                  <font face="Verdana"><small>Email:</small></font> <input type="text" name="user_name">
+                  <button type="button">Очистить</button> <br>
+
+                  <font face="Verdana"><small>Отправлять уведомления о новых статьях?</small></font>
+                  <select>
+                     </optgroup>
+                        <!-- <optgroup label="Отправлять уведомления о новых статьях?">  -->
+                        <option value="text">Нет</option> 
+                        <option value="text">Да</option> 
+                     </optgroup>
+                  </select>
+               </fieldset> 
+               
+               <fieldset>
+                  <legend><font face="Verdana"><small>Поле для комментария</small></legend>
+                  <!-- <input type="text" name="text" size="40"> -->
+                  <textarea rows="3" cols="45" name="text"></textarea><br>
+                  <button type="button">Очистить</button>
+                  <button type="button">Отправить</button>
+               </fieldset>
+            </form>
          </article>
 
-         <footer>
+         <footer><hr>
             <blockquote>
-               <small><font face="Verdana">
+               <small><small><font face="Verdana">
                   Created by RezerdPrime &emsp;&emsp;&emsp;&emsp;&emsp;
                   Used tools: Desmos, Notion &emsp;&emsp;&emsp;&emsp;&emsp;
                   FEFU 2023
-               </font></small>
+               </font></small></small>
             </blockquote>
          </footer>
 
