@@ -1,0 +1,26 @@
+#header_thing {
+    text-align: center;
+    font-family: Verdana;
+}
+
+#for_font, .text_in_comment {
+    font-family: Verdana;
+}
+
+#for_center, .cells_in_table{
+    text-align: center;
+}
+
+table, td, tr {
+    border: 1.75px solid black;
+    margin: auto; /* Выравнивае таблицы по центру */
+}
+
+input[type='text'], textarea {
+    background-color: rgb(241, 241, 241);
+}
+
+a[href] {
+    text-decoration: none; /* Убирает форматирование текста (как минимум нижнее подчёркивание точно) */
+    color: rgb(0, 81, 255);
+}
