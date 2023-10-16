@@ -7,6 +7,16 @@
       <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
       <link rel="stylesheet" href="css\main.css">
       <title> Гамма-функция </title>
+
+      <style>
+         li, td { font-style: italic; }
+         #col1 { color: rgb(165, 0, 0); }
+         #col2 { color: rgb(33, 163, 0); }
+         html { 
+            background: url("img/background.png"); /* господи, как же это убого выглядит */
+            background-size: 100% 30%;
+         }
+      </style>
    </head>
 
    <body>
@@ -65,17 +75,17 @@
                   <table> <!-- <caption>name</caption> -->
 
                      <tr>
-                        <td colspan="6"><div class="cells_in_table">Значения Гамма-функции</div></td>
+                        <td colspan="6" style="color: blue"><div class="cells_in_table">Значения Гамма-функции</div></td>
                      </tr>
          
                      <colgroup><col style="background-color:rgb(227, 227, 227) ;"></colgroup>
                      <tr>
-                        <td>Tочные</td>
+                        <td id="col1">Tочные</td>
                         <td><div class="cells_in_table">целые</div></td>
-                        <td><a id="for_center">полуцелые</a></td>
+                        <td><div class="cells_in_table">полуцелые</div></td>
                      </tr>
                      <tr>
-                        <td rowspan="2">Неточные</td>
+                        <td rowspan="2" id="col2">Неточные</td>
                         <td>рациональные</td>
                         <td>вещественные</td>
                         
