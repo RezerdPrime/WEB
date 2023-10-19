@@ -3,11 +3,11 @@
     font-family: Verdana;
 }
 
-#for_font, .text_in_comment {
+#for_font, #leg, .text_in_comment, .footer_text {
     font-family: Verdana;
 }
 
-#for_center, .cells_in_table{
+#for_center {
     text-align: center;
 }
 
@@ -23,4 +23,18 @@ input[type='text'], textarea {
 a[href] {
     text-decoration: none; /* Убирает форматирование текста (как минимум нижнее подчёркивание точно) */
     color: rgb(0, 81, 255);
+}
+
+#foo1, #foo2, #foo3 {
+    font-size: 0.9em;
+}
+
+#foo1 { float: left }
+#foo3 { float: right }
+
+.footer_text {
+    display: flex; /* Позволяет блоку смещаться (мне в данном случае нужно для оцентровки */
+    justify-content: space-between; /* Равномерно распределяет расстояние между блоками */
+    align-items: center; /* Непосредственно оцентровка */
+    padding: 0px 100px 0px 100px;
 }
