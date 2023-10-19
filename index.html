@@ -12,17 +12,25 @@
          li, td { font-style: italic; }
          #col1 { color: rgb(165, 0, 0); }
          #col2 { color: rgb(33, 163, 0); }
-         html { 
-            background: url("img/background.png"); /* господи, как же это убого выглядит */
-            background-size: 100% 30%;
+         .table_name { 
+            font-size: 1.2em; 
+            text-align: center;
          }
+         .cells_in_table { 
+            font-size: 0.9em; 
+            text-align: center;
+         }
+         /* html { 
+            background: url("img/background.png"); господи, как же это убого выглядит
+            background-size: 100% 30%;
+         }*/
       </style>
    </head>
 
    <body>
       <!-- <p align="center"><img src="img/korvo.png" alt="рандомный текст"></p> -->
 
-      <header>
+      <header id="header">
          <h1><p id="header_thing"><em>Гамма-функция и факты о ней</em></p></h1><hr>
       </header>
 
@@ -30,10 +38,10 @@
       <h3>не определена</h3></font></blockquote> -->
       
       <main>
-         <article>
+         <article id="article">
             <blockquote id="for_font">
 
-               <nav>
+               <nav id="nav1">
                   <ul>
                      <li>Введение</li>
                      <li>Точные значения</li>
@@ -43,7 +51,7 @@
                   </ul>
                </nav><hr><br>
 
-               <section> <!-- Введение -->
+               <section id="intro"> <!-- Введение -->
                   В математике существует огромное можество разных функций, интересных и не очень, страшных и красивых.
                   Но сегодня я хочу рассказать об одной действительно красивой функции - о <em>Гамма-функции</em>. <br> <br>
 
@@ -59,7 +67,7 @@
                </section>
 
 
-               <section> <!-- Факт 1 -->
+               <section id="fact1"> <!-- Факт 1 -->
                   <h3><em>Факт №1 - Точные значения</em></h3>
                   Поскольку Гамма-функция есть обобщение факториала, то неудивительно, 
                   что значения при целых <em>неотрицательных</em> аргументах являются точными.
@@ -75,19 +83,19 @@
                   <table> <!-- <caption>name</caption> -->
 
                      <tr>
-                        <td colspan="6" style="color: blue"><div class="cells_in_table">Значения Гамма-функции</div></td>
+                        <td colspan="6" style="color: blue"><div class="table_name">Значения Гамма-функции</div></td>
                      </tr>
          
                      <colgroup><col style="background-color:rgb(227, 227, 227) ;"></colgroup>
                      <tr>
                         <td id="col1">Tочные</td>
-                        <td><div class="cells_in_table">целые</div></td>
+                        <td><div class="cells_in_table" id="table_content">целые</div></td>
                         <td><div class="cells_in_table">полуцелые</div></td>
                      </tr>
                      <tr>
                         <td rowspan="2" id="col2">Неточные</td>
-                        <td>рациональные</td>
-                        <td>вещественные</td>
+                        <td><div class="cells_in_table">рациональные</div></td>
+                        <td><div class="cells_in_table">вещественные</div></td>
                         
                      </tr>
                      <tr>
@@ -98,7 +106,7 @@
                </section><br>
 
 
-               <section> <!-- Факт 2 -->
+               <section id="fact2"> <!-- Факт 2 -->
                   <h3><em>Факт №2 - Связь с тригонометрией</em></h3>
                   Сейчас я представлю вашему вниманию график Гамма-функции:
 
@@ -116,7 +124,7 @@
                </section>
 
 
-               <section> <!-- Факт 3 -->
+               <section id="fact3"> <!-- Факт 3 -->
                   <h3><em>Факт №3 - Появление в других интегралах</em></h3>
                   В первом факте я показал, чему равно Г(1/2), но ничего не сказал о том, как так получается. На самом деле, вот что там происходит:
 
@@ -170,13 +178,13 @@
             </form>
          </article>
 
-         <footer><hr>
+         <footer id="footer"><hr>
             <blockquote>
-               <small><small><div class="text_in_comment">
-                  Created by RezerdPrime &emsp;&emsp;&emsp;&emsp;&emsp;
-                  Used tools: Desmos, Notion &emsp;&emsp;&emsp;&emsp;&emsp;
-                  FEFU 2023
-               </div></small></small>
+               <div class="footer_text">
+                  <a id="foo1"> Created by RezerdPrime </a>
+                  <a id="foo2"> Used tools: Desmos, Notion </a>
+                  <a id="foo3"> FEFU 2023 </a>
+               </div>
             </blockquote>
          </footer>
 
