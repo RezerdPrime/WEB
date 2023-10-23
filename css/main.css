@@ -1,3 +1,8 @@
+html { 
+    background: url("C:/Users/Lenovo/Desktop/ну типа/img/background.png"); /*господи, как же это убого выглядит*/
+    /*background-size: 100% 30%;*/
+}
+
 #header_thing {
     text-align: center;
     font-family: Verdana;
@@ -14,6 +19,36 @@
 table, td, tr {
     border: 1.75px solid black;
     margin: auto; /* Выравнивае таблицы по центру */
+}
+
+p {
+    color: rgb(148, 4, 4);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p, h1 {
+    background-color: blueviolet;
+}
+
+.de_artikle .list_el {
+    color: rgb(255, 0, 255)
+}
+
+li, td { font-style: italic; }
+#col1 { color: rgb(165, 0, 0); }
+#col2 { color: rgb(33, 163, 0); }
+
+.table_name { 
+    font-size: 1.2em; 
+    text-align: center;
+}
+
+.cells_in_table { 
+    font-size: 0.9em; 
+    text-align: center;
 }
 
 input[type='text'], textarea {
