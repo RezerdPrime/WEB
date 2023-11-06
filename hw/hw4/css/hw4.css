@@ -1,0 +1,105 @@
+.T1 {
+    padding: 30px;
+    border: 40px white solid;
+    width: 330px;
+}
+
+.T2 {
+    border: 40px white solid;
+    width: 330px;
+    box-sizing: border-box;
+}
+
+.T3 {
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    /*background: red;*/
+}
+
+.T4 {
+    box-sizing: content-box; 
+    -moz-box-sizing: content-box; 
+    -webkit-box-sizing: content-box;
+}
+
+.T5a {
+    padding: 10px;
+    border: 2px black solid;
+    background: rgba(255, 122, 122, 0.5);
+}
+
+.T5b {
+    padding: 10px;
+    margin: 20px;
+    border: 2px black solid;
+    background: rgba(140, 255, 129, 0.5);
+}
+
+.T5c {
+    display: inline-block;
+    padding: 10px;
+    border: 2px black solid;
+    background: rgba(122, 137, 255, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ /* .T1, .T2, .T3, .T4, .T5 {
+    border: 1px gray solid;
+} */
+
+header, section, aside, footer {
+    display: block;
+    border: 1px solid black;
+}
+
+body {
+    text-align: center;
+    clear: both;
+}
+
+#T6 {
+    width: 980px;
+    margin: 15px auto 15px auto;
+}
+
+header {
+    padding: 20px;
+    background: rgba(189, 120, 238, 0.745)
+}
+
+nav {
+    margin: 10px 20px 30px 40px;
+    background: gray;
+}
+
+li {
+    display: inline;
+}
+
+section {
+    width: 660px;
+    float: left;
+    margin: 20px;
+    /* 660 + 20 + 20 */
+}
+
+aside {
+    float: left;
+    width: 220px;
+	  margin: 15px 0;
+	  padding: 20px;
+    background: bisque;
+	/* 220 + 20 + 20 */
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    border-top: 5px solid black;
+    margin: 20px;
+}
