@@ -23,13 +23,13 @@ header {
 }
 
 aside {
-    width: 45%;
+    width: 40%;
     border: 6px rgb(165, 255, 105) solid;
     border-radius: 10px;
 }
 
 .wrap {
-    width: 55%;
+    width: 60%;
     border: 6px rgb(105, 213, 255) solid;
     border-radius: 10px;
 }
