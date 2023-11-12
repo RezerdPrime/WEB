@@ -1,0 +1,71 @@
+.Task1, .Task2 {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(141, 78, 78);
+    color: white;
+    border: 2px black solid;
+}
+
+.Task1#div2 {
+    position: relative;
+    top: 20px; left: 20px;
+    background: rgb(66, 126, 182);
+}
+
+.Task2#div2 {
+    position: absolute;
+    top: 200px; left: 100px;
+    background: rgb(80, 182, 66);
+}
+
+.Task3 {
+    width: 500px;
+    height: 300px;
+    overflow: scroll;
+    margin-left: 150px;
+}
+
+.Task3 .divcls {
+    height: 100px;
+    width: 100px;
+    background: rgb(238, 74, 74);
+    color: white;
+    position: fixed;
+    top: 80px; left: 10px;
+}
+
+dt {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 1em 0;
+}
+
+body {
+    height: 1200px;
+}
+
+header {
+    position: relative;
+    background-image: url("https://cdn.discordapp.com/attachments/609574777686065182/1171946008129851522/Screenshot_20231109_085050_Discord.jpg?ex=655e86c6&is=654c11c6&hm=e531b203a8e6be7e2ef219cb83d6e7224a3c9ca4ff454f007d25ecf1c1ac310c&");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    color: rgb(0, 17, 255);
+    z-index: 0;
+}
+
+header::after {
+    position: absolute;
+    background-color: rgb(255, 223, 180);
+    z-index: -1;
+    content: 'TEEEEEEE';
+    color: red;
+    width: 200px;
+}
