@@ -1,0 +1,53 @@
+header {
+    margin-bottom: 1.5px;
+}
+
+nav {
+    padding: 0 !important;
+}
+
+.search {
+    justify-content: flex-end;
+    display: flex;
+}
+
+article {
+    padding: 40px;
+}
+
+.accordion-item {
+    width: 200px;
+}
+
+.overflow-auto {
+    max-height: 400px;
+    width: 200px;
+    border: 4px white solid;
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana;
+    background: white;
+}
+
+.sect1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.sect1 .cls, .card {
+    margin-right: 40px;
+}
+
+.sect2, .sect3 {
+    margin-top: 40px;
+}
+
+.scrollable {
+    height: 300px;
+    width: 300px;
+}
+
+footer {
+    margin-top: 1.5px;
+}
