@@ -1,5 +1,13 @@
 header {
-    margin-bottom: 1.5px;
+    border-bottom: 2.2px white solid;
+}
+
+html {
+    background: #212529
+}
+
+a {
+  text-decoration: none !important;
 }
 
 nav {
@@ -21,7 +29,7 @@ article {
 
 .overflow-auto {
     max-height: 400px;
-    width: 200px;
+    width: 150px;
     border: 4px white solid;
     border-radius: 10px;
     text-align: center;
@@ -31,12 +39,15 @@ article {
 }
 
 .sect1 {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.sect1 .cls, .card {
-    margin-right: 40px;
+.card {
+    width: 15em;
+    display: flex;
 }
 
 .sect2, .sect3 {
@@ -49,5 +60,8 @@ article {
 }
 
 footer {
-    margin-top: 1.5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2.2px white solid;
 }
