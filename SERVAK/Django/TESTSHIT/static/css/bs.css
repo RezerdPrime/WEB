@@ -1,0 +1,83 @@
+header {
+    border-bottom: 2.2px white solid;
+}
+
+html {
+    background: #212529
+}
+
+a {
+  text-decoration: none !important;
+}
+
+nav {
+    padding: 0 !important;
+}
+
+.search {
+    justify-content: flex-end;
+    display: flex;
+}
+
+article {
+    padding: 40px;
+}
+
+.accordion-item {
+    width: 200px;
+}
+
+.overflow-auto {
+    max-height: 400px;
+    width: 150px;
+    border: 4px white solid;
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana;
+    background: white;
+}
+
+.sect1 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    width: 15em;
+    display: flex;
+}
+
+.sect2, .sect3 {
+    margin-top: 40px;
+}
+
+.sect3 { margin-bottom: 40px; }
+
+.scrollable {
+    height: 300px;
+    width: 300px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2.2px white solid;
+    z-index: 2;
+}
+
+.bt {
+    margin-left: 2px;
+    margin-right: 1.7px;
+}
+
+.rg_form {
+    margin-bottom: 25px;
+}
+
+.soul-selling_to_the_devil {
+    font-size: 10px;
+}

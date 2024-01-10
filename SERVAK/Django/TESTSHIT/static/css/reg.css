@@ -1,0 +1,112 @@
+* {
+font-family: Verdana;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #212529 !important;
+}
+
+.info {
+  width: 350px;
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info.qz {
+  width: 550px !important;
+  height: 600px !important;
+  }
+
+.info.qz p {
+    font-style: italic;
+}
+
+.f1 {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+}
+
+.f1border {
+    border: 2px lightgray solid;
+    border-radius: 10px;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center !important;
+    margin:15px;
+}
+
+form {
+    display: grid;
+    align-items: center !important;
+}
+
+form#subscriptionForm {
+    justify-content: center;
+    display: contents;
+}
+
+.form-check {
+    display: flex !important;
+    align-items: center;
+}
+
+.form-check .form-check-input {
+    z-index: 2;
+}
+
+.submit_back {
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cls {
+    margin-right: 8.25px !important;
+    margin-left: 8.25px !important;
+}
+
+.cls2 {
+    padding: 0 !important;
+}
+
+.sz {
+    width: 315px;
+}
+
+.clsn {
+    width: 600px !important;
+    height: 350px !important;
+}
+
+#Q2, #Q3, #rez {
+    display: none;
+}
+
+#qzLabel {
+    text-align: center;
+}
+
+#rz1 {
+    margin-top: 10px;
+}

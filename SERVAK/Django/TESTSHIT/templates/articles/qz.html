@@ -1,0 +1,206 @@
+{% extends 'reg_base.html' %}
+{% load static %}
+{% block title %}My own shit{% endblock %}
+
+{% block meta %}
+    <meta charset="utf-8">
+    <meta name="author" content="Лютарь Владислав">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/reg.css' %}">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/emojis/1075223774737223740.webp?size=96&quality=lossless" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+{% endblock %}
+
+{% block script %}
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="info qz">
+
+        <div id="qzLabel">
+            <p><b>Solve two integrals</b></p>
+            <p><b>and one sum of a series</b></p>
+        </div>
+
+        <form method="POST" action="" id="qzForm">
+            {% csrf_token %}
+
+            <div class="f1border sz" id="Q1">
+                <img width="200px" src="https://cdn.discordapp.com/attachments/1153221582269984818/1185191370328133673/image.png?ex=6597f0fa&is=65857bfa&hm=c9c0360ebfa0dc251805a364e9f4817ea8d81ba8247c1b9b84569ba4443bd7f5&" >
+
+                <div class="f1">
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="group1" id="frst1">
+                      <label class="form-check-label" for="frst1">
+                        <img src="https://cdn.discordapp.com/attachments/609574777686065182/1189128526838894602/image.png?ex=659d093d&is=658a943d&hm=238260d1ebaa832eb87900faddfad23cf08feccf42ee7cb6581340d4dbffb593&">
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="group1" id="frst2">
+                      <label class="form-check-label" for="frst2">
+                        <img src="https://cdn.discordapp.com/attachments/609574777686065182/1189128816141017129/image.png?ex=659d0982&is=658a9482&hm=725a1f57c3336f741cf1d93fdda1097e6daba552bb90280c9b940f65ea9d405e&">
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="group1" id="frst3">
+                      <label class="form-check-label" for="frst3">
+                        <img src="https://cdn.discordapp.com/attachments/609574777686065182/1189129054587211826/image.png?ex=659d09bb&is=658a94bb&hm=673a06c72a9384f108374a282aaeae0a42e1d03250d4ef0c9f463d6b5e6dc60e&">
+                      </label>
+                    </div>
+
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-outline-light text-secondary cls" data-bs-dismiss="modal" onclick="redirectToPage()">Back</button>
+                    <button type="button" class="btn btn-outline-light text-secondary" onclick="divswap('Q1', 'Q2')">Next</button>
+                </div>
+
+            </div>
+
+            <div class="f1border sz" id="Q2">
+                <img width="200px" src="https://cdn.discordapp.com/attachments/1153221582269984818/1179422884775612436/image.png?ex=659569a8&is=6582f4a8&hm=eb9a6ae04026bdc4d85feb4e130421a3f30b1f70d939ededaf5d5e5178e68224&" >
+
+                <div class="f1">
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="group2" id="scnd1">
+                      <label class="form-check-label" for="scnd1">
+                        <img src="https://cdn.discordapp.com/attachments/609574777686065182/1189135101439770675/image.png?ex=659d0f5d&is=658a9a5d&hm=863ea4559916ed3330eabe813945d1ef205df42fa9b9b982bcaee040fde4c00a&">
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="group2" id="scnd2">
+                      <label class="form-check-label" for="scnd2">
+                        <img src="https://cdn.discordapp.com/attachments/609574777686065182/1189135341240729600/image.png?ex=659d0f96&is=658a9a96&hm=74dcd782a546a2da621ab852d47701abfe0868f7240ea25d75639ea202242c7d&">
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="group2" id="scnd3">
+                      <label class="form-check-label" for="scnd3">
+                        <img src="https://cdn.discordapp.com/attachments/609574777686065182/1189135496568381471/image.png?ex=659d0fbb&is=658a9abb&hm=d3b885b0a30208c26f44dc190830c1425ca454f6e44519fb0bd95886ba1b6c2b&">
+                      </label>
+                    </div>
+
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-outline-light text-secondary" onclick="divswap('Q2', 'Q1')">Prev</button>
+                    <button type="button" class="btn btn-outline-light text-secondary" onclick="divswap('Q2', 'Q3')">Next</button>
+                </div>
+
+            </div>
+
+            <div class="f1border sz" id="Q3">
+
+                <img width="200px" src="https://cdn.discordapp.com/attachments/1153221582269984818/1157304790364209162/image.png?ex=65980113&is=65858c13&hm=afe31ada1a1195340e00dec0990b356a830e0b84739084497bd8d74c086cc4ea&" >
+
+                <div class="form-check cls2">
+                    <input name="group3" type="text" class="form-control" placeholder="Der Antwort" id="thrd1">
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-outline-light text-secondary" onclick="divswap('Q3', 'Q2')">Prev</button>
+                    <button type="submit" class="btn btn-outline-light text-secondary" onclick="divswap('Q3', 'rez')">Submit</button>
+                </div>
+
+            </div>
+
+            <div class="f1border sz" id="rez">
+                <div id="rz1"></div>
+                <div id="rz2"></div>
+                <div id="rz3"></div>
+                <div id="total"></div>
+                <div id="cursed" style="display: none"><img src="https://cdn.discordapp.com/attachments/609574777686065182/1192683509584769074/SUSCHTSCH2.jpg?ex=65a9f813&is=65978313&hm=a5060d1914e7c25dffdcb09c54bf5d9076254a08b04c02bce82772ebe133dd5e&"></div>
+                <button type="button" class="btn btn-outline-light text-secondary cls" data-bs-dismiss="modal" onclick="redirectToPage()">Back</button>
+            </div>
+
+        </form>
+    </div>
+
+<script>
+function redirectToPage() {
+  window.location.href = '/';
+}
+
+function divswap(currentDivId, nextDivId) {
+  var currentDiv = document.getElementById(currentDivId);
+  var nextDiv = document.getElementById(nextDivId);
+
+  currentDiv.style.display = 'none';
+  nextDiv.style.display = 'flex';
+}
+</script>
+
+<script>
+$(document).ready(function(){
+    $('#qzForm').submit(function(e){
+
+            e.preventDefault();
+
+            var formData = $(this).serialize();
+
+            let Frag1Ant1 = document.getElementById('frst1');
+            let Frag1Ant2 = document.getElementById('frst2');
+            let Frag1Ant3 = document.getElementById('frst3');
+
+            let Frag2Ant1 = document.getElementById('scnd1');
+            let Frag2Ant2 = document.getElementById('scnd2');
+            let Frag2Ant3 = document.getElementById('scnd3');
+
+            let Frag3Ant = document.getElementById('thrd1');
+
+            var Q1 = 'False'; var Q2 = 'False'; var Q3 = 'False';
+            var a = 0;
+
+            if (Frag1Ant1.checked) { Q1 = 'True'; a += 1; }
+            if (Frag2Ant3.checked) { Q2 = 'True'; a += 1; }
+            if (Frag3Ant.value == '1/2' || Frag3Ant.value == '0.5' || Frag3Ant.value == '0,5') { Q3 = 'True'; a += 1; }
+
+            var tot = 'Total: ' + (a / 3 * 100).toFixed(2).toString() + "%";
+
+            if (Frag3Ant.value == 'SUSCHTSCH') {
+                var d1 = document.getElementById('Q1');
+                var d2 = document.getElementById('Q2');
+                var d3 = document.getElementById('Q3');
+                var d4 = document.getElementById('cursed');
+                d1.style.display = 'none';
+                d2.style.display = 'none';
+                d3.style.display = 'none';
+                d4.style.display = 'block';
+
+                total = '-666'
+            }
+
+            $.ajax({
+            type: 'POST',
+            url: '/',
+            data: formData,
+            success: function(response){
+                $('#qzLabel').text('Your results:');
+                $('#rz1').text('First choose is ' + Q1);
+                $('#rz2').text('Second choose is ' + Q2);
+                $('#rz3').text('Third choose is ' + Q3);
+                $('#total').text(tot);
+            },
+            error: function(response){
+                $('#qzMessage').text('Произошла ошибка.');
+            }
+        });
+    });
+});
+</script>
+
+
+
+{% endblock %}

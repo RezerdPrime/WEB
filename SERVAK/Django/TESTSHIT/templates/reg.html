@@ -1,0 +1,67 @@
+{% extends 'reg_base.html' %}
+{% load static %}
+{% block title %}My own shit{% endblock %}
+
+{% block meta %}
+    <meta charset="utf-8">
+    <meta name="author" content="Лютарь Владислав">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/reg.css' %}">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/emojis/1075223774737223740.webp?size=96&quality=lossless" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+{% endblock %}
+
+{% block script %}
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="info clsn">
+        <p>Thanks for registration, {{ username }}!</p>
+        <p>Your email: {{ email }}</p>
+        <p>You are from: {{ planet }}</p>
+        <p>Your gender: {{ gender }}</p>
+        <p>Your prefering:</p>
+        <p>{{ choose }}</p>
+        <button type="button" class="btn btn-light" onclick="back()">
+            Back and login
+        </button>
+        <script>
+            function back() {
+              window.location.href = '/';
+            }
+        </script>
+
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Dont click
+        </button>
+
+        <script>
+            $(document).ready(function(){
+              $('#staticBackdrop').modal('show');
+            });
+        </script>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Why...</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body"> eee </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light text-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary">My IQ is negative</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
